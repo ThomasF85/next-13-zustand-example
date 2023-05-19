@@ -1,0 +1,43 @@
+.wrapper {
+  width: 60%;
+}
+
+.title {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 10px;
+  width: 60%;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.textarea {
+  font-family: inherit;
+  padding: 0.2rem;
+  border: 3px solid black;
+  border-radius: 0.5rem;
+}
+
+.button {
+  background-color: lightcoral;
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}

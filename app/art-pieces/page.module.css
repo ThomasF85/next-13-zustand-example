@@ -1,0 +1,15 @@
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.item {
+  width: 30rem;
+  min-width: 10rem;
+  height: 30rem;
+}

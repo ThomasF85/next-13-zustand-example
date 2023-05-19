@@ -1,5 +1,5 @@
 {
-  "name": "deleteme",
+  "name": "next-13-zustand-example",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,8 @@
     "eslint-config-next": "13.4.3",
     "next": "13.4.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sharp": "^0.32.1",
+    "zustand": "^4.3.8"
   }
 }

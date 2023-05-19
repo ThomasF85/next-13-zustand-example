@@ -1,13 +1,16 @@
+import ArtPiecePreview from "@/components/ArtPiecePreview";
 import StoreInitializer from "@/lib/StoreInitializer";
 import fetchArtPieces from "@/lib/fetchArtPieces";
-import Spotlight from "@/components/Spotlight";
 import useStore from "@/lib/useStore";
+import styles from "./page.module.css";
 import { Suspense } from "react";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
-      <h1>Random Art Piece</h1>
+      <header>
+        <h1>Art Pieces</h1>
+      </header>
       <Suspense fallback={<div>Loading...</div>}>
         <PageContent />
       </Suspense>
@@ -25,7 +28,13 @@ async function PageContent() {
     <>
       {/* StoreInitializer is setting the state to the client store*/}
       <StoreInitializer state={{ pieces }} />
-      <Spotlight />
+      <ul className={styles.list}>
+        {pieces.map((piece) => (
+          <li key={piece.slug} className={styles.item}>
+            <ArtPiecePreview piece={piece} />
+          </li>
+        ))}
+      </ul>
     </>
   );
 }
